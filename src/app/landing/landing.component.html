@@ -1,0 +1,21 @@
+<div class="img">
+    <div class="row">
+        <div class="col-xl-9 col-lg-8 col-md-7 col-sm-12">
+            <div class="pt-5">
+                <span> <a class="btn btn-default mr-5" routerLink="/aboutufc" style="background-color:black;color:white">About UFC</a></span>
+                <span><a class="btn btn-default"routerLink="/reg"style="background-color:black;color:white" >Register</a></span>
+                </div>
+            <div class="logo-panel">
+                <div class="text-center">
+                    <span><a class="btn btn-default mr-5" id="btnShowLogin" type="button" (click)="loginclicked()"style="background-color:black;color:white">Login</a></span>
+                    <span><a class="btn btn-default" id="btnShowSignup" type="button" (click)="submitclicked()"style="background-color:black;color:white" >Sign up</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 mt-5 col-lg-4 col-md-5 col-sm-12">
+            <app-signup *ngIf="submitComp"></app-signup>
+            <app-login *ngIf="logincomp"></app-login>
+           
+            
+        </div>
+</div>

@@ -1,0 +1,96 @@
+<mat-toolbar id="mainToolbar" color="primary">
+  <mat-toolbar-row>
+    <i mat-icon-button>
+      <mat-icon (click)="onToolbarMenuToggle()" id="toolbarMenu">menu</mat-icon>
+    </i>
+        <span class="pt-2 pr-3 pl-4"><mat-icon aria-hidden="false" aria-label="Example home icon"><a routerLink="/home"style="color:white;">home</a></mat-icon></span>
+        <span class="pt-2"><mat-icon aria-hidden="false" aria-label="icon"><a routerLink="/dashbord"style="color:white;">dashboard</a></mat-icon></span>
+    <span class="menu-spacer"></span>
+    <div>
+      
+        
+		<span>
+      <i mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>keyboard_arrow_down</mat-icon>
+      </i>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>settings</mat-icon>
+    <span><a routerLink="/settings"style="color:black;">Settings</a></span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>power_settings_new</mat-icon>
+    <span><a routerLink="/login"style="color:black;">Logout</a></span>
+  </button>
+</mat-menu>
+    </span>
+	</div>
+  </mat-toolbar-row>
+
+ 
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav  mode="side" id="sidenav" [class.menu-open]=isMenuOpen [class.menu-close]=!isMenuOpen opened>
+    <mat-nav-list>
+    <div class="mt-3 mb-4">
+        <span class="user-panel"><mat-icon aria-hidden="false" aria-label="icon" class="ft-40">account_circle</mat-icon></span>
+        <span class="user-info">
+          <h4 class="txt-user">Username</h4>
+          <h4 class="txt-info" [ngStyle]="{'font-size.px': txtInfo}">info: xxxx</h4>
+        </span>
+     
+    </div>
+      <a mat-list-item [routerLink]="'/profile'"><span class="pr-13"><mat-icon aria-hidden="false" aria-label="icon">account_box</mat-icon></span> Profile </a>
+      <mat-divider></mat-divider>
+      <a mat-list-item [routerLink]="'/my-page'"><span class="pr-13"><mat-icon aria-hidden="false" aria-label="icon">list_alt</mat-icon></span> My Page</a>
+      <mat-divider></mat-divider>
+     
+      <mat-divider></mat-divider>
+      <a mat-list-item [routerLink]="'/invite-friends'"><span class="pr-13"><mat-icon aria-hidden="false" aria-label="icon">people_alt</mat-icon></span> Invite Friends </a>
+      <mat-divider></mat-divider>
+
+      <mat-divider></mat-divider>
+    
+      <mat-divider></mat-divider>
+      <span class="pr-13"><mat-icon aria-hidden="false" aria-label="icon">videocam</mat-icon></span> <a routerLink="/photos">Watch photos / Videos</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item [routerLink]="'/get-apps'"><span class="pr-13"><mat-icon aria-hidden="false" aria-label="icon">apps</mat-icon></span> Get your App</a>
+      <!--- a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Watch Videos</a -->
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content [ngStyle]="{'margin-left.px': contentMargin}">
+    <div style="height: 88vh;">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12">
+         <ng-content></ng-content>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-4">
+                <mat-card class="example-card">
+                    <mat-card-content>
+                        <div class="">Ad</div>
+                        <img src="../../../assets/ufc.jpeg" style="height: 215px; width: 1252px;">
+                    </mat-card-content>
+                </mat-card>
+            </div>
+          </div><!---row -->
+        </div><!-- col-md-9 -->
+
+        <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 mb-4 mt-4">
+          <div>
+            <mat-card class="example-card">
+            <mat-card-title class="text-center pt-2 pb-1"><h1 style="font-size: 46px;">Srujan jay</h1></mat-card-title>
+                <mat-card-content>
+                   <img src="../../../assets/fit.jpeg" style="width: 393px;height: 546px;">
+                </mat-card-content>
+                
+            </mat-card>
+          </div>
+          
+        </div><!-- col-xl-3 -->
+      </div><!-- row -->
+      </div><!--- container-fluid -->
+     </div> 
+  </mat-sidenav-content>
+</mat-sidenav-container>

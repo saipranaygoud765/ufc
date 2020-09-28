@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-drawer-backdrop.mat-drawer-shown{background-color:#fff}
+.mat-badge-content{border-radius:10%}
+.mat-badge-medium .mat-badge-content {width: 20px; height: 20px; line-height: 20px;}
+.mat-badge-medium.mat-badge-above .mat-badge-content{top:-6px}
+.mat-button-focus-overlay {background-color: transparent!important;}
+button:focus {outline: none !important;}
+button, input {outline: none !important;}
+.mat-drawer-inner-container{overflow-x:hidden !important}
+.card{background:#fff}
+.card-header{font-family: Calibri, Arial,sans-serif; text-align:center; font-weight:600;  font-size:26px; color:#232827; background:#fff; padding:10px 10px 20px 10px}
+.form-control{border-radius:0px; border:1px solid #e6e6e6; font-size:0.85rem}
+label{font-size:0.90rem; font-weight:500}
+.form-check-label{font-size:0.72rem; font-family: Calibri, Arial,sans-serif; font-weight:600; line-height:16px}
+.btn:focus, .btn:active {outline: none !important; box-shadow: none !important;}
+.form-control:focus{border-color:#e6e6e6; outline:0; -webkit-box-shadow:none; box-shadow:none;}
+.btn-primary{background:#0153aa; border:1px solid #0153aa}
+.btn-default{background:#fff; border:1px solid #383838; padding:8px 30px 8px 30px; font-weight:500}
+.btn-default:hover{background:#0153aa; border:1px solid #0153aa}
+.btn-default.active{background:#0153aa; border:1px solid #0153aa; color:#fff}
+#btnLogin{padding:8px 15px 8px 15px; line-height: 20px; font-size: 1rem; width:100%}
+a{color:#00d0ff}
+/*Tweeks*/
+.pr-40{padding-right:40px;}
+.pr-30{padding-right:30px;}
+.pr-13{padding-right:13px;}
+.pr-15{padding-right:15px;}
+.ft-25{font-size:30px}
+.ft-15{font-size:15px;}
+.ft-40{font-size:40px}
+.mt-n-20{margin-top:-20px}
+.mt-n-10{margin-top:-10px}
+
+
+

@@ -1,0 +1,59 @@
+
+/*.img-main{
+width: 100%;
+height: 789px;
+background-image: url('../../assets/img-landing-page.png') ;
+background-size: 100% 100%;
+}*/
+
+.img{
+  height: 100%; /* It doesn't have to be '%'. It can also use 'px'. */
+  /*width: 1600px;*/
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  background-image: url(../../assets/ufc.jpeg);
+
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow:hidden
+}
+.logo-panel{position:absolute;margin-left: 1027px; }
+.logo h1{font-size:80px; color:black; font-weight:bold; font-family: 'Merienda One', cursive; }
+
+@media all and (min-width: 1200px) {
+  .logo-panel{left:170px} 
+  .logo h1{font-size:100px;}
+}
+
+@media all and (max-width: 1200px) and (min-width: 1025px) {
+  .logo-panel{left:80px}
+  .logo h1{font-size:75px;}
+}
+
+@media all and (max-width: 1024px) and (min-width: 993px) {
+  .logo-panel{left:40px}  
+  .logo h1{font-size:65px;}
+}
+
+@media all and (max-width: 992px) and (min-width: 769px) {
+  .logo-panel{left:40px}  
+  .logo h1{font-size:55px;}
+}
+
+@media all and (max-width: 768px) and (min-width: 520px) {
+  .logo-panel{left:30px}   
+  .logo h1{font-size:40px;}
+}
+
+@media all and (max-width: 768px) and (min-width: 520px) {
+  .logo-panel{left:30px}   
+  .logo h1{font-size:40px;}
+}
+
+
+
+
+

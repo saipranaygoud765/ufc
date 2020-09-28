@@ -1,0 +1,26 @@
+.container{
+    margin: 12px;
+    margin-left: 252px;
+    margin-top: 187px;
+}
+h1{
+    color:black;
+    font-size: 50px;
+    font-weight: 89px;
+    margin-bottom: 50px !important;
+}
+.play-btn{
+    width: 50px;
+    position: relative;
+    margin-top: 93px;
+    margin-left: 153px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0;
+}
+.col-md-4:hover .play-btn{
+    opacity: 1;
+}
+.img-fluid{
+    position: absolute;
+}

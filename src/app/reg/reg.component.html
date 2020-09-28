@@ -1,0 +1,104 @@
+<h1 class="mt-2">Online Registrartion Form</h1>
+<div id="middle" class="col-md-8">
+
+    <div class="text-center">
+        <img src="../../assets/img.jpeg" alt="" style="width: 125px; border-radius: 75px;">
+        <i id="cam" class="fa fa-camera fa-2x" aria-hidden="true"></i>
+    </div>
+
+    <div class="d-flex align-items-center ">
+        <mat-form-field appearance="outline" class="w-50">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="First Name">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="w-50">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="Last Name">
+        </mat-form-field>
+    </div>
+    <div class="d-flex align-items-center mt-2">
+        <mat-form-field appearance="outline" class="w-50">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-50">
+            <mat-label>Member Ship</mat-label>
+            <select matNativeControl required>
+                <option value="volvo">Single</option>
+                <option value="saab">Family / 2 Members</option>
+            </select>
+        </mat-form-field>
+    </div>
+    <div class="d-flex align-items-center ">
+        <mat-form-field appearance="outline" class="w-50">
+            <mat-label>Phone</mat-label>
+            <input matInput placeholder="Phone">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-50">
+            <mat-label>Occupation</mat-label>
+            <input matInput placeholder="Phone">
+        </mat-form-field>
+
+
+    </div>
+    <div class="d-flex justify-content-around align-items-center ">
+        <mat-form-field appearance="outline" class="w-50">
+            <mat-label>Date of Birth</mat-label>
+            <input matInput [matDatepicker]="picker" matInput placeholder="Date of Birth">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-50">
+            <mat-label>Gender</mat-label>
+            <select matNativeControl required>
+                <option value="volvo">Male</option>
+                <option value="saab">Female</option>
+            </select>
+        </mat-form-field>
+    </div>
+    <div class="d-flex justify-content-around align-items-center">
+
+        <div class="form-group">
+            <label for="exampleFormControlInput1"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1"style="margin-right: 193px;" placeholder="Fitness goal / Purpose of Joining">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1"></label>
+            <input type="email" class="form-control " id="exampleFormControlInput1"style="margin-right: 193px;" placeholder="Medical history / Disoreder / Injuriess">
+          </div>
+    </div>
+    <div class="d-flex justify-content-around align-items-center">
+        <h1>weigth Traning 3000/Month</h1>
+        <div class="form-check">
+            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox"style="margin-right: 501px;" value="option1"
+                aria-label="...">
+        </div>
+
+
+        <h1>Boxing/MMA 4000/Month</h1>
+        <div class="form-check">
+            
+            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"
+                aria-label="...">
+
+        </div>
+    </div>
+    <div class="d-flex justify-content-around align-items-center">
+        <h1>Calisthenies/ Athletics/sports traning  10000/month  T.C</h1>
+        <div class="form-check">
+            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox"style="margin-right: 501px;" value="option1"
+                aria-label="...">
+        </div>
+
+
+        <h1>Personal Traning  10000/month   T.C</h1>
+        <div class="form-check">
+            
+            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"
+                aria-label="...">
+
+        </div>
+    </div>
+    <button class="w-50 bg-success mb-5"style="color:white;height: 62px;margin-left: 331px;"><a routerLink="/payments"style="color:white;"><h1>Apply FOR Registrartion</h1></a></button>
+</div>

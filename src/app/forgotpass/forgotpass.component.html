@@ -1,0 +1,13 @@
+<div class="card mr-4 mt-5" *ngIf="forgotpasshide">
+    <div class="card-header">Forgot Your Password</div>
+    <div class="card-body">
+       <form>
+           <div class="form-group">
+               <label>Username / Email</label>
+               <input type="text" id="txtUsername" class="form-control">
+           </div>
+           <button class="text-center w-50 primary"type="button" (click)="verifyclicked()"style="color:white;">Next</button>
+           </form>
+    </div>
+</div>
+<app-verify *ngIf ="verifyComp"></app-verify>
